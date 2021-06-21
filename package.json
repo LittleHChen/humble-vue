@@ -2,20 +2,17 @@
   "name": "humble-vue",
   "version": "1.0.0",
   "description": "",
-
   "main": "dist/humble-vue.ssr.js",
   "browser": "dist/humble-vue.esm.js",
   "module": "dist/humble-vue.esm.js",
   "unpkg": "dist/humble-vue.min.js",
   "types": "humble-vue.d.ts",
-
   "files": [
     "dist/*",
     "humble-vue.d.ts",
     "src/**/*.vue"
   ],
   "sideEffects": false,
-
   "scripts": {
     "serve": "vue-cli-service serve dev/serve.ts",
     "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
@@ -23,10 +20,7 @@
     "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
     "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife"
   },
-
-  "dependencies": {
-  },
-
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
